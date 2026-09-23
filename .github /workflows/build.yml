@@ -1,0 +1,11 @@
+name: Build
+
+on:
+  workflow_call:
+
+jobs:
+ build:
+   runs-on: ubantu-latest
+   steps:
+    - name: build the code
+      run: echo " build using docker"
