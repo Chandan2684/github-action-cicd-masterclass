@@ -1,10 +1,8 @@
 name: Code
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_call:
+  
 jobs:
   code-checkout:
     runs-on: ubuntu-latest
