@@ -1,0 +1,17 @@
+ # name ofThe workflow 
+ name: code
+
+ # When the workflows run
+ on:
+    push:
+
+ # jobs in the workflow
+ jobs:
+   code-checkout:
+     run-on: ubantu-latest
+     steps:
+      - name: clone the code
+        uses: action/checkout@v7
+
+      - name: print the message
+        run: echo "code cloned"
