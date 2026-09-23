@@ -1,0 +1,11 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+ build:
+   runs-on: ubantu-latest
+   steps:
+    - name: test the code
+      run: echo " test using sonar"
