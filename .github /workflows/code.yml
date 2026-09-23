@@ -1,9 +1,9 @@
  # name ofThe workflow 
- name: code
+ name: Code
 
  # When the workflows run
  on:
-    push:
+    workflow_call:
 
  # jobs in the workflow
  jobs:
