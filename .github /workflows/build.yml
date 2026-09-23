@@ -5,7 +5,7 @@ on:
 
 jobs:
  build:
-   runs-on: ubantu-latest
+   runs-on: ubuntu-latest
    steps:
     - name: build the code
       run: echo " build using docker"
