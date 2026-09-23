@@ -1,0 +1,11 @@
+name: Deploy
+
+on:
+  workflow_call:
+
+jobs:
+ build:
+   runs-on: ubantu-latest
+   steps:
+    - name: deploy the code
+      run: echo "deploy the code to EC2 instance"
