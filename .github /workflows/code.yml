@@ -1,8 +1,10 @@
 name: Code
 
 on:
-  workflow_call:
-  
+  push:
+    branches:
+      - main
+
 jobs:
   code-checkout:
     runs-on: ubuntu-latest
@@ -12,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print the message
-        run: echo "code cloned"
+        run: echo "code cloned successfully"
