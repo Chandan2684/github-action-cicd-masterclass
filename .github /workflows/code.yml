@@ -1,13 +1,10 @@
- # name of the workflow
 name: Code
 
-# When the workflow runs
 on:
   push:
     branches:
       - main
 
-# jobs in the workflow
 jobs:
   code-checkout:
     runs-on: ubuntu-latest
